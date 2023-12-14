@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+             .box
+        {font-size:72px;
+         text-align:center;
+            background-color:red;
+            color:white;
+
+        }
+        @media (max-width:300px)
+        {
+        #box1
+        {
+             background-color: blue;
+        }
+    }
+    @media (max-width:500px) and (min-width:300px) {
+         
+     
+        #box2
+        {
+            background-color: yellow;
+        }
+    }
+    @media (max-width:700px) and (min-width:500px) {
+        #box3
+        {
+            background-color: green;
+        }
+    }
+    @media (min-width:700px)  {
+        #box4
+        {
+            background-color: pink;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+ <h1> Media Query </h1>
+        <div class="box" id="box1"> I am a IPhone  </div>
+        <div class="box" id="box2"> I am Tab </div>
+        <div class="box" id="box3"> I am a Computer </div>
+        <div class="box" id="box4"> I am a Wide Screen Desptop </div>
+  </body>
+</html>

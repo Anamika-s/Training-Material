@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <button onclick="previousPage()"> Click </button>
+    <script> 
+        var result = window.history.length;
+        document.getElementById("p1").innerHTML = 
+        "Currently, the value of <b>history.length</b> is <b>"+ result + "</b>";
+        function previousPage() { 
+    window.history.back(); 
+} 
+
+function NextPage() { 
+    window.history.forward() 
+} 
+function NextPage() { 
+    window.history.go(4); 
+} 
+
+
+
+    </script> 
+</body>
+</html>

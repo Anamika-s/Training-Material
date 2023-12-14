@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header-container
+        {
+            height: 12vh;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;    border-bottom :2px solid red;
+    align-items: center; }
+         .branding img{
+    height: 10vh;
+    width: 10vw;
+    padding: 1em;
+}
+
+.nav-bar ul{
+    list-style: none;
+}
+.nav-bar ul li{
+    display: inline;
+   padding: 5px;
+}
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+.signup
+{
+    background-color: coral;
+    border:2px solid wheat;
+    color: white;
+padding : 10px;
+width: 10vw;
+border-radius: 10%;
+}
+.signup:hover{
+    cursor: pointer;
+    color: yellow;
+    background-color: green;
+}
+
+
+section
+{
+    background-image: url("logo.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-unit-mask
+{
+    height: 80vh;
+    background-color:black;
+    opacity: .4;
+    
+}
+
+.hero-unit-mask h1{
+    font-size:5em;
+    margin: 0;
+    color: white;
+    padding-top: 25vh;
+}
+
+.hero-unit-mask a{
+    border-radius: 10px;
+    color: white;
+    background-color:coral;
+text-decoration: none;
+padding: 1em;
+display: block;
+width: 10vw;
+margin: 1em auto;
+}
+
+</style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="branding">
+<img src="logo.jpg">
+        </div>
+<nav class="nav-bar">
+    <ul>
+        <li> <a href="#"> Pricing </a></li>
+        <li> <a href="#"> Tour </a></li>
+        <li> <a href="#"> Customers </a></li>
+        <li> <a href="#"> Company </a></li>
+    </ul>
+</nav> 
+<button class="signup" type="submit"> Register </button>
+
+    </header>
+    <section>
+<div class="hero-unit-mask">
+       <h1> Welcome to Stackroute </h1>
+        <a href="#"> Let us learn </a>
+    </div>
+    </section>
+</body>
+</html>

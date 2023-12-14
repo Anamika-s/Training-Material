@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="number"]
+    {
+        background-color: blue;
+    }
+    button[type=submit] {
+            background-color: blue;
+            color: white;
+            width: 200px;
+        }
+
+        
+        input:valid {
+                background-color: green;
+            }
+
+            input:invalid {
+                background-color: red;
+            }
+
+
+</style>
+<body>
+    <form novalidate>
+        <table>
+<tr>
+    <td><label for="txtName"> Enter Name </label></td>
+    <td><input type="text" id="txtName" pattern="[A-Za-z ]{2}" required maxlength="10" size="10"></td>
+</tr>
+<tr>
+    <td><label for="txtAge"> Enter Age </label></td>
+    <td><input type="number" id="txtAge" required min="10" max="20">
+</tr>
+<tr>
+    <td></td>
+    <td>Select Age : <input id="ageCategory" name="ageCategory" list="ageRanges" />
+        <datalist id="ageRanges">
+            <option value="Under Two's"></option>
+            <option value="2-7"> </option>
+            <option value="8-12"> </option>
+            <option value="13-17"> </option>
+            <option value="Adult"> </option>
+        </datalist>
+</td>
+</tr>
+<tr>
+    <td>                <select id="carManufacturer">
+        <optgroup label="European">
+            <option value="volvo"> Volvo </option>
+            <option value="audi"> Audi </option>
+        </optgroup>
+        <optgroup label="American">
+            <option value="chrysler"> Chrysler </option>
+            <option value="ford"> Ford </option>
+        </optgroup>
+    </select>
+</td>
+    <td>
+        <select>
+            <option> C </option>
+            <option> C++ </option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td colspan="=2">
+        <button type="submit"> Submit </button>
+    </td>
+</tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+  /* Style rules 
+
+element 
+{
+    property : value;
+}
+p{
+    background-color: red;
+}
+
+CLASS 
+
+.class1
+{
+     background-color: red;
+}
+
+ID
+#id1
+{
+    background-color: red;
+}
+
+<p class="class1"> 
+<p id="id1">  */
+
+
+
+
+

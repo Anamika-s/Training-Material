@@ -1,0 +1,75 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+.banner
+{
+     padding: 10px 20px;
+     background-color:burlywood;
+     color: white;
+
+}
+li{
+    background-color: gray;
+    color: white;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+li a{
+    color : white;
+}
+nav{
+    background-color: pink;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+body{
+    max-width: 960px;
+    background-color:wheat;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Dosis', sans-serif;
+font-family: 'Rethink Sans', sans-serif; 
+font-size:larger;
+    }
+
+    section
+{
+    background-color: burlywood;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+article
+{
+    background-color: aqua;
+    margin-top: 5px;
+    padding: 10px 15px;
+}
+
+main{
+    width:640px;
+    float: left;
+}
+
+aside
+{
+    float: right;
+    background-color:orange;
+    margin-top: 5px;
+      padding: 20px;
+      width: 270px;
+}
+
+footer
+{
+     clear: both;
+     text-align: center;
+}

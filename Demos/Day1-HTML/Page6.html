@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <figcaption> An Image </figcaption>
+        <img src="images/image.png"  width="100" height="100" alt="Cant display"/>
+       
+        </figure>
+        
+    <form>
+
+        <div>
+            <select id="carManufacturer">
+                <optgroup label="European">
+                    <option value="volvo"> Volvo </option>
+                    <option value="audi"> Audi </option>
+                </optgroup>
+                <optgroup label="American">
+                    <option value="chrysler"> Chrysler </option>
+                    <option value="ford"> Ford </option>
+                </optgroup>
+            </select>
+        </div>
+                   <fieldset>
+                    <legend> Personal Info </legend>
+                    <div>
+
+        <label for="txtName"> Enter Name </label>
+        <input type="text" id="txtName" required minlength="5" pattern="[A-Z a-z]+" size="5"/>
+        </div>
+        <div>
+            <td>Select Age : <input id="ageCategory" name="ageCategory" list="ageRanges" />
+                <datalist id="ageRanges">
+                    <option value="Under Two's"></option>
+                    <option value="2-7"> </option>
+                    <option value="8-12"> </option>
+                    <option value="13-17"> </option>
+                    <option value="Adult"> </option>
+                </datalist>
+        </td>
+        </div>
+        <div>
+            <label for="txtAge"> Enter Age </label>
+            <input type="number" id="txtAge"/>
+            </div>
+        
+            <div>
+                <label for="txtAddress"> Enter Address </label>
+                <input type="text" id="txtAddress"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Educational Info </legend>
+                <div>
+                    Select Course
+                     <select name="" id="">
+                        <option value="0"> C++ </option>
+                        <option value="1"> C </option>
+                        <option value="2"> Java</option>
+                        <option value="">Python </option>
+                        <option value="">C#</option>
+                     </select>
+                </div>
+
+                <div>
+                     Gra <input type="checkbox">
+                     PG <input type="checkbox">
+                </div>
+                <div>
+                    TimeSlot <input type="radio" name="r1"> 11- 1
+                    <input type="radio" name="r1"> 12- 1
+                    <input type="radio" name="r1"> 10- 1
+
+                </div>
+            </fieldset>
+        <button type="submit"> Submit </button> 
+    </form>
+</body>
+</html>

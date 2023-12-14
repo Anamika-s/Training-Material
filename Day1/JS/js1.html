@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function GetDetails()
+        {
+            var firstName = document.getElementById('txtFirstName').value;
+            var lastName= document.getElementById('txtLastName').value;
+             alert(firstName + ' ' +  lastName);
+             alert(lastName.toUpperCase());
+             alert(lastName.length);
+               }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="txtFirstName"> Enter First Name</label>
+            <input type="text" id="txtFirstName">
+            
+        </div>
+        
+        <div>
+            <label for="txtLastName"> Enter Last ame</label>
+            <input type="text" id="txtLastName">
+            
+        </div>
+        <button type="button" onclick="GetDetails()"> Get DEtails </button>
+    </form>
+    
+</body>
+</html>

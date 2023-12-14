@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+             font-family:Georgia, 'Times New Roman', Times, serif;
+             font-size: x-large;
+        }
+        div{
+            
+            margin-top: 200px;
+            margin-left: 400px;
+            background-color: green;
+            display: inline-block;
+            height: 400px;
+            width: 500px;
+        }
+        .c1
+        {
+            margin-left: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+       <b>welcome to login page  </b> 
+       <br><br>
+
+       <form>
+        <label class="c1"> username </label>
+        <br>
+        <input type="text" class="c1" required pattern="[0-9]{3}[A-Za-z]{4}[?%/]+" maxlength="20">
+        <br>
+        <label class="c1"> password</label>
+        <br>
+        <input type="password" class="c1" required>
+    <br>
+    remember me <input type="checkbox">
+    <br>
+    <a href="#"> Forgot password </a>
+    <br>
+    <br>
+    <button type="submit" style="border-radius:10px;width:100px; background-color: yellow;"> login </button>
+</form>
+    </div>
+
+</body>
+</html>

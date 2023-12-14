@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students=["ajay","deepak"];
+        function Add(event)
+        {
+            console.log(event);
+            // console.log(event.keyCode)
+            if(event.keyCode===13)
+ students.push(document.getElementById("studentName").value);
+ console.log(students.length);
+        }
+        function GetStudents()
+        { 
+            var list ="";
+            for(var i=0;i<students.length;i++)
+            {
+                console.log(students[i]);
+                list += `<li>${students[i]}</li>`;
+            }
+            console.log(list);
+            document.getElementById("studentList").innerHTML = list
+;        }
+    </script>
+    <input type="text" id="studentName" onkeydown="Add(event)"/> 
+    <!-- <button type="button" onclick="Add()"> Add Student </button> -->
+    <button type="button" onclick="GetStudents()"> GetStudents </button>
+  
+    <h1> List of Students </h1>
+    <ol id="studentList"> </ol>
+</body>
+</html>
