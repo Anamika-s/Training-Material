@@ -1,0 +1,70 @@
+*
+{
+     margin:0;
+     padding: 0;
+
+}
+#section-1
+{
+     background-image: url("images/pexels-ruben-boekeloo-19469680.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+}
+#section-2
+{
+     background-image: url("images/pexels-saso-ucitelj-19416038.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+background-attachment: fixed;
+/* justify-content: center; */
+display: flex;
+align-items: center;
+
+
+}
+#section-3
+{
+     background-image: url("images/pexels-tim-mossholder-12532584.jpg");
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+}
+
+.common
+{
+    color: red;
+    width:50%;
+}
+.common h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.common h1::first-letter
+{
+    font-size: 80px;
+    color:  blue;
+    font-weight: bold;
+}
+
+.count
+{
+    display:  block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 80;
+    text-align: center;
+    background: yellow;
+    color:royalblue;
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            background-color: red;
+            border:1px solid green;
+            /* width:100px;
+            height: 100px; */
+            font-size:72px;
+         text-align:center;
+color:white;
+border-radius: 10px;
+        }
+        @media (max-width:300px)
+        {
+            #box1 {
+                display: block;
+                background-color:green;
+            }
+        }
+        @media (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color:yellow;
+
+            }
+        }
+        @media only screen and  (max-width:800px) and (min-width:500px) {
+            #box-3 {
+                display: block;
+                background-color:purple;
+            }
+        }
+
+        @media (min-width:800px) {
+            #box-4 {
+                display: block;
+                background-color:blue;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box1"> I am a Phone </div>
+    <div class="box" id="box-2"> I am a tablet </div>
+    <div class="box"id="box-3"> I am a laptop </div>
+    <div class="box" id="box-4"> I am a Big Screen Monitor </div>
+</body>
+</html>
