@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('Hello')">
+    
+   <form>
+    <div>
+        <label> Enter  No1 </label>
+        <input type="number" id="txtNo1">
+    </div>
+    <div>
+        <label> Enter  No2 </label>
+        <input type="number" id="txtNo2">
+    </div>
+    <div>
+        <label> Result </label>
+        <input type="number"id="txtResult">
+    </div>
+    <div>
+        <button onclick="Add()" type="button"> Add </button>
+    </div>
+   </form>
+   <h1 id="hResult">  </h1>
+<script>
+    function GetValues()
+    {
+        document.getElementById("txtNo1").value= prompt("Enter Value of no1");
+        document.getElementById("txtNo2").value= prompt("Enter Value of no2");
+        
+         
+    }
+    function Add()
+    {
+        GetValues();
+         alert("within func")
+         var no1 = parseInt(document.getElementById("txtNo1").value);
+         var no2 = parseInt(document.getElementById("txtNo2").value);
+         document.getElementById("txtResult").value = no1 + no2;
+         document.getElementById("hResult").innerHTML = no1+no2;
+    }
+    document.write("hello");
+    
+</script>
+</body>
+</html>
