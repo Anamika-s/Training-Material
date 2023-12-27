@@ -9,6 +9,7 @@ using
 2. using Function Component
 
 
+
 3. Create Login Component using Ref and pass values to Welcome componet. Display all details in Welcome component
 
 4. Add a button, and a variable, whatever value yoy put in variable should come in Page title also
