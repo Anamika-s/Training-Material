@@ -1,1 +1,18 @@
 https://formik.org/docs/tutorial
+
+https://www.smashingmagazine.com/2020/10/react-validation-formik-yup/
+
+npm i yup@0.28.5
+
+https://rapidapi.com/guides/fetch-api-react
+
+https://www.simplilearn.com/tutorials/reactjs-tutorial/map-in-reactjs#:~:text=In%20ReactJs%2C%20the%20maps%20are,each%20element%20of%20the%20array.
+
+https://www.freecodecamp.org/news/map-filter-reduce-in-javascript/
+
+https://www.digitalocean.com/community/tutorials/react-axios-react
+
+https://www.geeksforgeeks.org/how-to-access-a-dom-element-in-react/
+
+
+
