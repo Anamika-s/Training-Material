@@ -1,0 +1,9 @@
+Create a small app for MovieCruiser 
+https://gitlab.com/anamikasawhney/moviecruiser-assignment.git
+
+You need to perform CRUD operations on Movies
+
+Use json-server
+
+Use Formik to create forms with validation
+
