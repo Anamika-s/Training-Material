@@ -1,6 +1,3 @@
-https://www.frontendmag.com/tutorials/usereducer-vs-redux/
-
-
 Product > Id, Name,Price
 
 Display all products with Add to Cart button
