@@ -1,0 +1,42 @@
+                  Assignment No : 5
+Create one dll with following functionalities : 
+1. Take care of exception Handling in calling code 
+2. In case some numbers are null, store 10 by default
+3. In case some strings are null, store "***"  by default
+
+Numeric Functions
+
+ 1. Add n no. of arguments  int 
+ 2. Subtract 
+ 3. Multiply 
+ 4. Divide   float
+ 5. Find Max int 
+ 6. Find Min
+ 7. Check a no. for even  bool
+ 8. Check a no. for odd
+ 9. Check a no. for prime
+
+In Main Method in Calling Application
+ After this, functions are the extension methods
+
+ 10. Display all even no.s with in a given range
+ 11. Display all odd no.s with in a given range
+ 12. Display all prime no.s with in a given range
+ 13. Diplay table of an entered no.
+ 14. Display tables from 1 to 10 of all no.s with in a given range
+ 15. Display tables from a given range of all no.s with in a given range
+ 16. Reverse a no.
+
+StringFunctions
+
+ 1. Find no. of characters in a sentence
+ 2. Check for Palindrome
+ 3. Reverse a sentencene
+ 4. Find no. of vowels, consonants, integers and sp characters in a sentence
+ 5. Change case to upper case
+ 6. Change sentence to proper case
+ 7. Combine two sentences
+ 8. Remove extra spaces in a sentence
+ 9. Count no. of words in a sentence
+ 10.Search a substring in a sentence
+ 11.Find the no. of occurences of a substring in a sentence
