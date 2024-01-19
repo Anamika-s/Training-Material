@@ -1,0 +1,12 @@
+Perform CRUD Operations on 
+Employee Entity
+( ID required,  same ID shall not be allowed
+Name must , only alphabets, spaces allowed min 15 characters needed, 
+DateOfBirth must and  where Year of Birth should be in between 2002 and 2005
+DAteofJoining where DOJ shallbe less than equal to Current Date
+ Salary which could be nullable and if entered should be in between 12000 and 60000, 
+Dept shall be only HR Accts IT
+Password , must shall not be displayed
+Retype Password  must , and shall match Password
+) (With Validation)
+
