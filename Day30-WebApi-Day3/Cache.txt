@@ -1,0 +1,13 @@
+The most significant difference is that ResponseCache is to cache on the client side, while OutputCache is on the server side. Assuming you're firing the same request from two different browsers, you won't benefit from ResponseCache but OutputCache. Of course, using OutputCache will consume your server-side resources but with ResponseCache, you don't have to worry about it.
+
+
+
+Response Cache > https://www.c-sharpcorner.com/article/response-caching-in-asp-net-core/
+
+
+Cache > InMemory and Distributed > https://www.c-sharpcorner.com/article/caching-mechanism-in-asp-net-core/
+
+
+Hangfire > https://codewithmukesh.com/blog/repository-pattern-caching-hangfire-aspnet-core/
+
+CacheRepo > https://dev.to/bourzayq_khalid/a-quick-view-of-cached-repository-pattern-14pi
