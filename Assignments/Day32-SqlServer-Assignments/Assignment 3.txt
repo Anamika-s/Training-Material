@@ -1,0 +1,27 @@
+ Assignment 3
+Make following tables:
+
+ Student
+ Rn , Name , Address, Marks , DOB
+
+ Batch
+ Batch Code, Name, Duration, Description
+
+ Fees
+ Fees_Paid, Date_Paid
+
+
+ Trainer
+Trainer ID, Trainer Name, Address,Qualification, Experience, Domain
+
+ After these tables are there,
+
+ 1. Display STudent name, his address, Batch Code, Batch Name,Faculy Name, Duration of the batch
+
+ 2. Student name and the fees paid by the student and the 
+ date on which the fees was paid
+
+ 3. Batch Code, Batch Name and the Trainer details
+
+
+ 
