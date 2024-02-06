@@ -1,0 +1,227 @@
+use practdb
+
+select * from Emp
+select id, name from Emp
+update Emp set name ='Karan' where id=2
+Go
+select * from  sys.objects where type='U'
+
+select * from sys.tables
+
+select * from Student
+
+
+-- First Procedure that will give you all students
+create proc GetStudents
+AS
+Begin
+select * from student
+End
+
+
+-- Execute Proc
+
+exec GetStudents
+
+
+create proc InsertStudent
+AS
+Begin
+insert into student(name, address, batch) values('Karan','N- Delhi', 'C#')
+End
+
+exec InsertStudent
+
+
+
+
+create proc InsertEmployee (@id int, @name varchar(20), @dept varchar(20),
+@salary int , @dob datetime)
+As
+Begin
+insert into Employee (id, name, dept, salary, dob)
+values(@id, @name, @dept, @salary,@dob)
+End
+
+exec InsertEmployee 1 , 'Ajay','HR', 21000,'12/12/2000'
+
+
+create proc GetEmployees
+As
+Begin
+Select * from Employee
+
+
+exec GetEmployees
+
+
+
+-- Modify procedure , alter proc
+-- Will insert rec in Employee table , but if same id already exist
+-- proc shud not insert that record and return 0 
+-- otherwise we shud insert reco and return 1
+-- proc may or may not return a value by using return statement 
+-- Return statement can be used to return a single value and that too
+-- shud be integer
+alter proc InsertEmployee (@id int, @name varchar(20), @dept varchar(20),
+@salary int , @dob datetime)
+As
+Begin
+ if(exists(select * from Employee where id = @id))
+   return 0 
+ else 
+  begin
+		insert into Employee (id, name, dept, salary, dob)
+		values(@id, @name, @dept, @salary,@dob)
+		return 1
+ end
+End
+
+-- to call a proc which returns some value
+ declare @flag int
+  
+exec @flag = InsertEmployee 3 , 'Ajay','HR', 21000,'12/12/2000'
+if @flag=0
+  print 'Record with this ID already exist'
+else 
+ print 'Record inserted'
+
+
+create proc GetEmployees
+As
+Begin
+Select * from Employee
+
+
+exec GetEmployees
+
+sp_helptext GetEmployees 
+
+  
+alter proc GetEmployees  
+As  
+Begin  
+Select * from Employee  
+End
+
+drop proc GetStudents
+
+
+
+create proc GetEmployeesCount
+As
+Begin
+declare @count int
+select @count  = COUNT(*) from Employee
+return @count
+End
+
+-- Calling Part
+declare @count int
+exec @count = GetEmployeesCount
+print 'No of Employees are ' + convert(varchar, @count)
+
+
+
+
+-- We will pass id, and give me other details
+-- We need to return more than 1 value, we shud use ouput paramters
+
+create proc GetEmployeeDetailsById(
+@id int,
+@name varchar(20) output,
+@dept varchar(20) output,
+@salary int output)
+As
+ Begin
+  if(Not(exists(Select * from Employee where id=@id)))
+    return 0
+  else 
+    begin
+		select @name = name , @dept = dept, @salary = salary from Employee 
+		where id=@id
+		return 1
+	end
+ end
+
+ -- calling part
+
+  declare @name varchar(20)
+  declare @dept varchar(20)
+  declare @salary int
+  declare @flag int
+  exec @flag = GetEmployeeDetailsById 10 , @name output ,
+  @dept output , @salary output
+   if @flag = 0
+     print 'There is no record with this ID'
+   else
+     print concat(@name , ' ' ,@dept ,' ' ,convert(varchar, @salary))
+
+
+
+-- Functions
+  -- Functions are used to perform some specific task
+
+    -- functions are of 2 types
+	-- 1. System Defined
+	-- 2. User Defined
+
+	-- System Defined
+	-- There are diff categories , Numeric , String , General , Date , etc
+
+	-- string functions
+	select upper(name) from Employee	
+   select lower(name) , len(name) from Employee
+
+
+   -- functions cud be scalar or group/aggregate functions
+   -- scalar functions are functions which takes single value as an input and gives
+   -- single value
+   -- Aggregate / Group functions
+   -- max min count avg sum
+
+
+   select GetDate() 
+   select convert(varchar, GetDate())
+   
+   select convert(varchar, GetDate(),1)
+
+
+create function CombineNames(@name1 varchar(20) , @name2 varchar(20)) 
+returns varchar(40)
+As 
+  begin
+   return concat (@name1 , ' ' , @name2)
+end
+
+
+
+create function CombineNames(@name1 varchar(20) , @name2 varchar(20)) 
+returns varchar(40)
+As 
+  begin
+   return concat (@name1 , ' ' , @name2)
+end
+
+select  dbo.CombineNames('Ajay','Kumar')
+
+select len('ajay'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
