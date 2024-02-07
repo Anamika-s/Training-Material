@@ -1,0 +1,5 @@
+using clause > https://www.geeksforgeeks.org/sql-using-clause/
+Temprary Tables > https://www.sqlshack.com/overview-and-performance-tips-of-temp-tables-in-sql-server/
+https://www.c-sharpcorner.com/UploadFile/rohatash/temporary-tables-in-sql-server-2012/
+
+
