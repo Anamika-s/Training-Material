@@ -1,0 +1,12 @@
+When mail comes in gmail with subject Resume, reply them Send mail 
+
+
+When a mail is received in outlook,has attavvhemdb. Tramslate ots tet to hindi and sebd mail to gmail account
+
+
+
+https://www.sqlshack.com/azure-automation-translate-documents-into-different-languages-using-cognitive-services-with-azure-logic-apps/
+
+
+
+

@@ -1,0 +1,4 @@
+https://code-maze.com/aspnetcore-content-security-policy/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+https://www.c-sharpcorner.com/article/secure-web-application-using-http-security-headers-in-asp-net-core/
+

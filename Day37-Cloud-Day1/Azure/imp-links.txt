@@ -1,0 +1,34 @@
+Into to cloud
+
+https://www.zdnet.com/article/what-is-cloud-computing-everything-you-need-to-know-about-the-cloud/
+---------------
+Benefits
+
+https://www.business.qld.gov.au/running-business/it/cloud-computing/benefits
+---------------
+Disadvantages
+
+http://blog.centretechnologies.com/5-cloud-computing-disadvantages
+---------------
+Management Group
+
+https://cloudacademy.com/blog/how-to-effectively-use-azure-management-groups-subscriptions-and-resource-groups/#:~:text=Management%20groups%20allow%20you%20to,and%20compliance%20across%20multiple%20subscriptions.
+---------------
+azure price calculator
+
+https://azure.microsoft.com/en-in/pricing/calculator/
+---------------
+Azure Naming Convention
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging
+---------------
+azure speed
+
+https://www.azurespeed.com/Azure/Latency
+---------------
+Geography & Regions
+https://azure.microsoft.com/en-us/global-infrastructure/geographies/
+---------------
+
+
+
